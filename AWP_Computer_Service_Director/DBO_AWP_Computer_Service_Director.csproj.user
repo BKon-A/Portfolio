@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="ClientsAdd.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ClientsDelete.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ClientsEdit.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ClientsView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="DirectorWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MasterDelete.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MasterEdit.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MasterView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="OrderAdd.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="OrderDelete.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="OrderView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MasterAdd.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ReportsViewCustomers.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ReportViewRepairmans.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ServiceAdd.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ServiceDelete.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ServiceEdit.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ServiceView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="DataSet1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="DataSet2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="ClientsAdd.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ClientsDelete.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ClientsEdit.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ClientsView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MasterDelete.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MasterEdit.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MasterView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="OrderAdd.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="OrderDelete.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="OrderView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ReceptionistWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MasterWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="DirectorWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MasterAdd.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ReportsViewCustomers.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ReportViewRepairmans.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ServiceAdd.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ServiceDelete.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ServiceEdit.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ServiceView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

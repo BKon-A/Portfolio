@@ -1,0 +1,21 @@
+﻿<Window x:Class="DBO_AWP_Computer_Service_Director.ServiceAdd"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DBO_AWP_Computer_Service_Director"
+        mc:Ignorable="d"
+        Title="ServiceAdd" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="TextBoxName" HorizontalAlignment="Left" Margin="463,163,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="221" FontSize="16" Height="53"/>
+        <TextBox x:Name="TextBoxCost" HorizontalAlignment="Left" Margin="463,221,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontSize="16"/>
+        <Label Content="Назва послуги" HorizontalAlignment="Left" Margin="241,152,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="Вартість послуги" HorizontalAlignment="Left" Margin="241,210,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Button Content="Додати послугу" HorizontalAlignment="Left" Margin="377,301,0,0" VerticalAlignment="Top" FontSize="16" Click="Button_ClickAdd" Height="37" Width="130"/>
+        <TextBox x:Name="TextBoxID" HorizontalAlignment="Left" Margin="463,108,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontSize="16"/>
+        <Label Content="Ідентифікаційний номер" HorizontalAlignment="Left" Margin="241,104,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="Майстер" HorizontalAlignment="Left" Margin="318,49,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <ComboBox x:Name="ComboBoxMasters" HorizontalAlignment="Left" Margin="432,55,0,0" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>
