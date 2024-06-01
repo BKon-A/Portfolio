@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet2" targetNamespace="http://tempuri.org/DataSet2.xsd" xmlns:mstns="http://tempuri.org/DataSet2.xsd" xmlns="http://tempuri.org/DataSet2.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection ConnectionStringObject="Data Source=DESKTOP-0LS5MFK\SQLEXPRESS01;Initial Catalog=MainDB;Persist Security Info=True;User ID=sa;Password=12345678" IsAppSettingsProperty="false" Modifier="Assembly" Name="MainDBConnectionString" ParameterPrefix="@" Provider="Microsoft.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Repairman_PerformanceTableAdapter" GeneratorDataComponentClassName="Repairman_PerformanceTableAdapter" Name="Repairman_Performance" UserDataComponentName="Repairman_PerformanceTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="MainDBConnectionString" DbObjectName="MainDB.dbo.Repairman_Performance" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Repairman_ID, Repairman_Name, Job_Title, Seniority, Repairman_Reputation, Total_Earnings, Jobs_Done FROM dbo.Repairman_Performance</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Repairman_ID" DataSetColumn="Repairman_ID" />
+              <Mapping SourceColumn="Repairman_Name" DataSetColumn="Repairman_Name" />
+              <Mapping SourceColumn="Job_Title" DataSetColumn="Job_Title" />
+              <Mapping SourceColumn="Seniority" DataSetColumn="Seniority" />
+              <Mapping SourceColumn="Repairman_Reputation" DataSetColumn="Repairman_Reputation" />
+              <Mapping SourceColumn="Total_Earnings" DataSetColumn="Total_Earnings" />
+              <Mapping SourceColumn="Jobs_Done" DataSetColumn="Jobs_Done" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_UserDSName="DataSet2" msprop:Generator_DataSetName="DataSet2">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Repairman_Performance" msprop:Generator_RowEvHandlerName="Repairman_PerformanceRowChangeEventHandler" msprop:Generator_RowDeletedName="Repairman_PerformanceRowDeleted" msprop:Generator_RowDeletingName="Repairman_PerformanceRowDeleting" msprop:Generator_RowEvArgName="Repairman_PerformanceRowChangeEvent" msprop:Generator_TablePropName="Repairman_Performance" msprop:Generator_RowChangedName="Repairman_PerformanceRowChanged" msprop:Generator_RowChangingName="Repairman_PerformanceRowChanging" msprop:Generator_TableClassName="Repairman_PerformanceDataTable" msprop:Generator_RowClassName="Repairman_PerformanceRow" msprop:Generator_TableVarName="tableRepairman_Performance" msprop:Generator_UserTableName="Repairman_Performance">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Repairman_ID" msprop:Generator_ColumnPropNameInRow="Repairman_ID" msprop:Generator_ColumnPropNameInTable="Repairman_IDColumn" msprop:Generator_ColumnVarNameInTable="columnRepairman_ID" msprop:Generator_UserColumnName="Repairman_ID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Repairman_Name" msprop:Generator_ColumnPropNameInRow="Repairman_Name" msprop:Generator_ColumnPropNameInTable="Repairman_NameColumn" msprop:Generator_ColumnVarNameInTable="columnRepairman_Name" msprop:Generator_UserColumnName="Repairman_Name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Job_Title" msprop:Generator_ColumnPropNameInRow="Job_Title" msprop:Generator_ColumnPropNameInTable="Job_TitleColumn" msprop:Generator_ColumnVarNameInTable="columnJob_Title" msprop:Generator_UserColumnName="Job_Title">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Seniority" msprop:Generator_ColumnPropNameInRow="Seniority" msprop:Generator_ColumnPropNameInTable="SeniorityColumn" msprop:Generator_ColumnVarNameInTable="columnSeniority" msprop:Generator_UserColumnName="Seniority" type="xs:int" />
+              <xs:element name="Repairman_Reputation" msprop:Generator_ColumnPropNameInRow="Repairman_Reputation" msprop:Generator_ColumnPropNameInTable="Repairman_ReputationColumn" msprop:Generator_ColumnVarNameInTable="columnRepairman_Reputation" msprop:Generator_UserColumnName="Repairman_Reputation" type="xs:float" />
+              <xs:element name="Total_Earnings" msprop:Generator_ColumnPropNameInRow="Total_Earnings" msprop:Generator_ColumnPropNameInTable="Total_EarningsColumn" msprop:Generator_ColumnVarNameInTable="columnTotal_Earnings" msprop:Generator_UserColumnName="Total_Earnings" type="xs:double" minOccurs="0" />
+              <xs:element name="Jobs_Done" msprop:Generator_ColumnPropNameInRow="Jobs_Done" msprop:Generator_ColumnPropNameInTable="Jobs_DoneColumn" msprop:Generator_ColumnVarNameInTable="columnJobs_Done" msprop:Generator_UserColumnName="Jobs_Done" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Repairman_Performance" />
+      <xs:field xpath="mstns:Repairman_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

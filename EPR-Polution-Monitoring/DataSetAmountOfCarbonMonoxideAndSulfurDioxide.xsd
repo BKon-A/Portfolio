@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetAmountOfCarbonMonoxideAndSulfurDioxide" targetNamespace="http://tempuri.org/DataSetAmountOfCarbonMonoxideAndSulfurDioxide.xsd" xmlns:mstns="http://tempuri.org/DataSetAmountOfCarbonMonoxideAndSulfurDioxide.xsd" xmlns="http://tempuri.org/DataSetAmountOfCarbonMonoxideAndSulfurDioxide.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection ConnectionStringObject="Dsn=postgres;data source=localhost;database=BiospherePollutionResearch;user id=admin" IsAppSettingsProperty="false" Modifier="Assembly" Name="BiospherePollutionResearchConnectionString" Provider="System.Data.Odbc" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="amount_of_carbon_monoxide_sulfurTableAdapter" GeneratorDataComponentClassName="amount_of_carbon_monoxide_sulfurTableAdapter" Name="amount_of_carbon_monoxide_sulfur" UserDataComponentName="amount_of_carbon_monoxide_sulfurTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="BiospherePollutionResearchConnectionString" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT "counted_values", "station_name", "quality", "title" FROM "public"."amount_of_carbon_monoxide_sulfur"</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="counted_values" DataSetColumn="counted_values" />
+              <Mapping SourceColumn="station_name" DataSetColumn="station_name" />
+              <Mapping SourceColumn="quality" DataSetColumn="quality" />
+              <Mapping SourceColumn="title" DataSetColumn="title" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetAmountOfCarbonMonoxideAndSulfurDioxide" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_UserDSName="DataSetAmountOfCarbonMonoxideAndSulfurDioxide" msprop:Generator_DataSetName="DataSetAmountOfCarbonMonoxideAndSulfurDioxide">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="amount_of_carbon_monoxide_sulfur" msprop:Generator_RowEvHandlerName="amount_of_carbon_monoxide_sulfurRowChangeEventHandler" msprop:Generator_RowDeletedName="amount_of_carbon_monoxide_sulfurRowDeleted" msprop:Generator_RowDeletingName="amount_of_carbon_monoxide_sulfurRowDeleting" msprop:Generator_RowEvArgName="amount_of_carbon_monoxide_sulfurRowChangeEvent" msprop:Generator_TablePropName="amount_of_carbon_monoxide_sulfur" msprop:Generator_RowChangedName="amount_of_carbon_monoxide_sulfurRowChanged" msprop:Generator_RowChangingName="amount_of_carbon_monoxide_sulfurRowChanging" msprop:Generator_TableClassName="amount_of_carbon_monoxide_sulfurDataTable" msprop:Generator_RowClassName="amount_of_carbon_monoxide_sulfurRow" msprop:Generator_TableVarName="tableamount_of_carbon_monoxide_sulfur" msprop:Generator_UserTableName="amount_of_carbon_monoxide_sulfur">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="counted_values" msprop:Generator_ColumnPropNameInRow="counted_values" msprop:Generator_ColumnPropNameInTable="counted_valuesColumn" msprop:Generator_ColumnVarNameInTable="columncounted_values" msprop:Generator_UserColumnName="counted_values" type="xs:long" minOccurs="0" />
+              <xs:element name="station_name" msprop:Generator_ColumnPropNameInRow="station_name" msprop:Generator_ColumnPropNameInTable="station_nameColumn" msprop:Generator_ColumnVarNameInTable="columnstation_name" msprop:Generator_UserColumnName="station_name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="quality" msprop:Generator_ColumnPropNameInRow="quality" msprop:Generator_ColumnPropNameInTable="qualityColumn" msprop:Generator_ColumnVarNameInTable="columnquality" msprop:Generator_UserColumnName="quality" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="title" msprop:Generator_ColumnPropNameInRow="title" msprop:Generator_ColumnPropNameInTable="titleColumn" msprop:Generator_ColumnVarNameInTable="columntitle" msprop:Generator_UserColumnName="title" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

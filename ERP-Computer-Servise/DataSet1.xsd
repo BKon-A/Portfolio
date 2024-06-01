@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection ConnectionStringObject="Data Source=DESKTOP-0LS5MFK\SQLEXPRESS01;Initial Catalog=MainDB;Persist Security Info=True;User ID=sa;Password=12345678" IsAppSettingsProperty="false" Modifier="Assembly" Name="MainDBConnectionString" ParameterPrefix="@" Provider="Microsoft.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Customers_With_Paid_RepairsTableAdapter" GeneratorDataComponentClassName="Customers_With_Paid_RepairsTableAdapter" Name="Customers_With_Paid_Repairs" UserDataComponentName="Customers_With_Paid_RepairsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="MainDBConnectionString" DbObjectName="MainDB.dbo.Customers_With_Paid_Repairs" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Client_ID, Client_Name, Phone_Number, Total_Cost FROM dbo.Customers_With_Paid_Repairs</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Client_ID" DataSetColumn="Client_ID" />
+              <Mapping SourceColumn="Client_Name" DataSetColumn="Client_Name" />
+              <Mapping SourceColumn="Phone_Number" DataSetColumn="Phone_Number" />
+              <Mapping SourceColumn="Total_Cost" DataSetColumn="Total_Cost" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DataSet1" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Customers_With_Paid_Repairs" msprop:Generator_RowEvHandlerName="Customers_With_Paid_RepairsRowChangeEventHandler" msprop:Generator_RowDeletedName="Customers_With_Paid_RepairsRowDeleted" msprop:Generator_RowDeletingName="Customers_With_Paid_RepairsRowDeleting" msprop:Generator_RowEvArgName="Customers_With_Paid_RepairsRowChangeEvent" msprop:Generator_TablePropName="Customers_With_Paid_Repairs" msprop:Generator_RowChangedName="Customers_With_Paid_RepairsRowChanged" msprop:Generator_RowChangingName="Customers_With_Paid_RepairsRowChanging" msprop:Generator_TableClassName="Customers_With_Paid_RepairsDataTable" msprop:Generator_RowClassName="Customers_With_Paid_RepairsRow" msprop:Generator_TableVarName="tableCustomers_With_Paid_Repairs" msprop:Generator_UserTableName="Customers_With_Paid_Repairs">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Client_ID" msprop:Generator_ColumnPropNameInRow="Client_ID" msprop:Generator_ColumnPropNameInTable="Client_IDColumn" msprop:Generator_ColumnVarNameInTable="columnClient_ID" msprop:Generator_UserColumnName="Client_ID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Client_Name" msprop:Generator_ColumnPropNameInRow="Client_Name" msprop:Generator_ColumnPropNameInTable="Client_NameColumn" msprop:Generator_ColumnVarNameInTable="columnClient_Name" msprop:Generator_UserColumnName="Client_Name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Phone_Number" msprop:Generator_ColumnPropNameInRow="Phone_Number" msprop:Generator_ColumnPropNameInTable="Phone_NumberColumn" msprop:Generator_ColumnVarNameInTable="columnPhone_Number" msprop:Generator_UserColumnName="Phone_Number" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="13" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Total_Cost" msprop:Generator_ColumnPropNameInRow="Total_Cost" msprop:Generator_ColumnPropNameInTable="Total_CostColumn" msprop:Generator_ColumnVarNameInTable="columnTotal_Cost" msprop:Generator_UserColumnName="Total_Cost" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Customers_With_Paid_Repairs" />
+      <xs:field xpath="mstns:Client_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
