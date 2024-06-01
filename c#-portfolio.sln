@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34902.65
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DB_Reports(TPD_Lab_6)", "..\..\GitRepos\C-Sparp-public\TPD_5_Connect_to_DB\DB_Reports(TPD_Lab_6)\DB_Reports(TPD_Lab_6).csproj", "{E54B9046-34FD-4EA0-AAC3-12EF9AAFB100}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DBO_AWP_Computer_Service_Director", "..\..\GitRepos\CursedWork\DBO_AWP_Computer_Service_Director\DBO_AWP_Computer_Service_Director.csproj", "{FC677553-2ECC-46AE-9C0B-A99BE61E64DB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E54B9046-34FD-4EA0-AAC3-12EF9AAFB100}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E54B9046-34FD-4EA0-AAC3-12EF9AAFB100}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E54B9046-34FD-4EA0-AAC3-12EF9AAFB100}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E54B9046-34FD-4EA0-AAC3-12EF9AAFB100}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC677553-2ECC-46AE-9C0B-A99BE61E64DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC677553-2ECC-46AE-9C0B-A99BE61E64DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC677553-2ECC-46AE-9C0B-A99BE61E64DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC677553-2ECC-46AE-9C0B-A99BE61E64DB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DBE2FD09-A1C2-40CA-8359-3F42DE5E3537}
+	EndGlobalSection
+EndGlobal
