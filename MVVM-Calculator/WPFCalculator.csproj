@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <Folder Include="Converter\" />
+    <Folder Include="Images\" />
   </ItemGroup>
 
   <ItemGroup>
