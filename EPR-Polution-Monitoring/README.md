@@ -8,7 +8,7 @@ EPR-Pollution-Monitoring is a solution designed to monitor environmental polluti
 ![Login Window Screenshot](/EPR-Polution-Monitoring/Images/workplace-auth-window.png)
 
 ### One of several tables
-![Station Info Screenshot](/EPR-Polution-Monitoring/Images/workplace-station-info.png)
+![Station Info Screenshot](/EPR-Polution-Monitoring/Images/workplace-stations-info.png)
 
 ### Simple diagram
 ![Optimal Values Screenshot](/EPR-Polution-Monitoring/Images/workplace-optimal-values.png)
