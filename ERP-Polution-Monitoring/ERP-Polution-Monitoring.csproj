@@ -1,0 +1,116 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <RootNamespace>DB_Reports_TPD_Lab_6</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\Logo.png" />
+    <None Remove="ReportAmountOfCarbonMonoxideAndSulfurDioxide.rdlc" />
+    <None Remove="ReportAvgDangerousPieces.rdlc" />
+    <None Remove="ReportDangerousPieces.rdlc" />
+    <None Remove="ReportMeasuredResourcesByTime.rdlc" />
+    <None Remove="ReportStationsInfo.rdlc" />
+    <None Remove="ReportTest.rdlc" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Reports\ReportAmountOfCarbonMonoxideAndSulfurDioxide.rdlc" />
+    <EmbeddedResource Include="Reports\ReportAvgDangerousPieces.rdlc" />
+    <EmbeddedResource Include="Reports\ReportDangerousPieces.rdlc" />
+    <EmbeddedResource Include="Reports\ReportMeasuredResourcesByTime.rdlc">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportStationsInfo.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportTest.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Npgsql" Version="8.0.3" />
+    <PackageReference Include="ReportViewerCore.WinForms" Version="15.1.20" />
+    <PackageReference Include="System.Data.Odbc" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\Logo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Data\DataSetAmountOfCarbonMonoxideAndSulfurDioxide.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>DataSetAmountOfCarbonMonoxideAndSulfurDioxide.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="Data\DataSetAvgDangerousPieces.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>DataSetAvgDangerousPieces.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="Data\DataSetDangerousPieces.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>DataSetDangerousPieces.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="Data\DataSetMeasuredResourcesByTime.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>DataSetMeasuredResourcesByTime.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="Data\DataSetStationsInfo.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>DataSetStationsInfo.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="Data\DataSetTest.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>DataSetTest.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="Views\WorkspaceWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Data\DataSetAmountOfCarbonMonoxideAndSulfurDioxide.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetAmountOfCarbonMonoxideAndSulfurDioxide.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="Data\DataSetAvgDangerousPieces.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetAvgDangerousPieces.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="Data\DataSetDangerousPieces.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetDangerousPieces.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="Data\DataSetMeasuredResourcesByTime.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetMeasuredResourcesByTime.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="Data\DataSetStationsInfo.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetStationsInfo.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="Data\DataSetTest.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetTest.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="Common\" />
+  </ItemGroup>
+
+</Project>
