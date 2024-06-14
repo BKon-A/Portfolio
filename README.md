@@ -4,21 +4,21 @@ Welcome to my GitHub portfolio. This repository contains a collection of my proj
 
 ## Projects
 
-### [ERP-Polution-Monitoring](/ERP-Polution-Monitoring/README)
+### [ERP-Polution-Monitoring](/ERP-Polution-Monitoring)
 
 A comprehensive solution for monitoring environmental pollution.
 
 - **Stack:** C#, WPF, ADO.NET, FastReports, SQL (PostgreSQL)
 - **Description:** This project focuses on tracking and reporting pollution data, providing detailed analytics and reporting capabilities.
 
-### [ERP-Computer-Service](/ERP-Computer-Service/README)
+### [ERP-Computer-Service](/ERP-Computer-Service)
 
 An ERP system tailored for computer service management.
 
 - **Stack:** C#, WPF, ADO.NET, FastReports, SQL (MS SQL Server)
 - **Description:** This ERP system helps manage computer service operations, including job tracking, client management, and service reports.
 
-### [MVVM-Calculator](/MVVM-Calculator/README)
+### [MVVM-Calculator](/MVVM-Calculator)
 
 A calculator application demonstrating the MVVM pattern.
 
