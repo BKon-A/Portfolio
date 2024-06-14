@@ -1,25 +1,23 @@
 # EPR-Polution-Monitoring
 
-![EPR-Polution-Monitoring Screenshot](../Images/epr-pollution-monitoring.png)
-
 ## Overview
 
 EPR-Pollution-Monitoring is a solution designed to monitor environmental pollution levels, providing detailed reports and analytics. Screenshots of the application are provided below.
 
 ### Login Window
-![Login Window Screenshot](../Images/epr-pollution-monitoring-auth-window.png)]
+![Login Window Screenshot](../Images/workplace-auth-window.png)]
 
 ### One of several tables
-![Station Info Screenshot](../Images/epr-pollution-monitoring-station-info.png)
+![Station Info Screenshot](../Images/workplace-stations-info.png)
 
 ### Simple diagram
-![Optimal Values Screenshot](../Images/epr-pollution-monitoring-optimal-values.png)
+![Optimal Values Screenshot](../Images/workplace-optimal-values.png)
 
 ### Report with diagram
-![Report with diagram Screenshot](../Images/epr-pollution-monitoring-dangerous-particles.png)
+![Report with diagram Screenshot](../Images/workplace-dangerous-particles.png)
 
 ### Report with grouping by quality
-![Report with grouping by quality Screenshot](../Images/epr-pollution-monitoring-num-of-experiments.png)
+![Report with grouping by quality Screenshot](../Images/workplace-num-of-experiments.png)
 
 ## Technologies Used
 
