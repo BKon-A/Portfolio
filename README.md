@@ -4,7 +4,7 @@ Welcome to my GitHub portfolio. This repository contains a collection of my proj
 
 ## Projects
 
-### [EPR-Pollution-Monitoring](EPR-Pollution-Monitoring/README.md)
+### [ERP-Pollution-Monitoring](EPR-Pollution-Monitoring/README.md)
 
 A comprehensive solution for monitoring environmental pollution.
 
